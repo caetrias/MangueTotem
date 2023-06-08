@@ -1,5 +1,5 @@
 """ BIBLIOTECAS EXTRAS INSTALADAS. CASO NÃO AS TENHA, USE COMANDOS NO GIT BASH:
-'pip install pygame'
+'pip install pygame' 
 'pip install python-vlc'
 'pip install opencv-python'
 """
@@ -20,10 +20,41 @@ def loading():
 def clear():
     os.system("cls")
 
+def TELA_PERGUNTA_IDADE():
+    clear()
+
+    data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
+    
+    f = open("idadegenero.txt","a",  encoding='utf-8')
+    idade= int(input("\033[1;32;40mQual a sua idade? \033[m"))
+    print("\033[1;32;40mQual seu Sexo Biológico? \033[m")
+    print("[1]Masculino")
+    print("[2]Feminino")
+    print("[3]Prefiro não informar")
+    genero = int(input())
+    if genero == 1:
+        p1 = open("idadegenero.txt", "a",  encoding='utf-8' )
+        p1.write(f'Masculino | Data e Hora: {data_hora}\n')
+        p1.close()
+    elif genero == 2:
+        p1 = open("idadegenero.txt", "a",  encoding='utf-8' )
+        p1.write(f'Feminino | Data e Hora: {data_hora}\n')
+        p1.close()
+    elif genero == 3:
+        p1 = open("idadegenero.txt", "a",  encoding='utf-8' )
+        p1.write(f'Prefiro não responder | Data e Hora: {data_hora}\n')
+        p1.close()
+
+
+    f.write(f"Idade:{idade} | Gênero:{genero} | Data e Hora: {data_hora}\n")
+
+    f.close()
+TELA_PERGUNTA_IDADE()
+
 def tela_inicial():
     clear()
-    print("----[Mangue Totem]----")
-    print("JÁ CONHECE O MANGUE TOTEM?")
+    print("----[MUD.E]----")
+    print("\033[1;32;40mJÁ CONHECE O MUD.E?\033[m")
     print("\n[1]SIM")
     print("[2]NÃO")
     decisao = int(input())
@@ -32,7 +63,6 @@ def tela_inicial():
         tela_menu()
     if decisao == 2:
         loading()
-        TELA_PERGUNTA_IDADE()
         TELA_PERGUNTA_1()
         TELA_PERGUNTA_2()
         VIDEO_MANGUE()
@@ -41,8 +71,8 @@ def tela_inicial():
 
 def tela_menu():
     clear()
-    print("----[Mangue Totem]----")
-    print("\nPor onde você gostaria de começar?") #colorir titulo/diminuir fonte desse print
+    print("----[MUD.E]----")
+    print("\n\033[1;32;40mPor onde você gostaria de começar?\033[m") #colorir titulo/diminuir fonte desse print
     print("\n[1]ANIMAÇÃO")
     print("[2]PERGUNTAS")
     print("[3]COLABORADORES")
@@ -58,7 +88,6 @@ def tela_menu():
         TELA_AGRADECIMENTO()
     if decisao == 3:
         loading()
-        TELA_COLABORADORES()
     if decisao == 4:
         loading()
         TELA_MAPA()
@@ -80,15 +109,6 @@ def VIDEO_MANGUE(): #CODIGO AINDA EM PERIODO DE TESTE - TESTANDO OPÇÕES
     #     continue
     # pygame.quit()
 
-def TELA_PERGUNTA_IDADE():
-    clear()
-    f = open("idadegenero.txt","a",  encoding='utf-8')
-    idade= int(input("Qual a sua idade? "))
-    genero = input("Qual seu Gênero? ")
-
-    f.write(f"Idade:{idade} | Gênero:{genero}\n")
-
-    f.close()
 
 def TELA_ANIMACAO():
     # video1 = cv2.VideoCapture('Flor de tangerina.mp4')
@@ -109,60 +129,65 @@ def TELA_PERGUNTA_1():
 
     data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
 
-    print('Você costuma fazer reciclagem ? ')
+    print('\033[1;32;40mVocê costuma fazer reciclagem ? \033[m')
     print('\n[1] Sim, sempre!')
     print('[2] Às vezes! ')
     print('[3] Não, nunca pensei sobre... ')
     print('[4] Não, pretendo começar a fazer assim que souber mais a respeito! ')
     escolha = int(input('Escolha: '))
-    if escolha ==1:
+    if escolha ==1:                                 #tratamento de erro caso numero do input seja diferente dos esperados
         p1 = open("Pergunta 1.txt", "a",  encoding='utf-8' )
-        p1.write(f'Sim, sempre! | Data e Hora: {data_hora}\n')
+        p1.write(f'{escolha} | Data e Hora: {data_hora}\n')
         p1.close()
     elif escolha ==2:
         p1 = open("Pergunta 1.txt", "a",  encoding='utf-8' )
-        p1.write(f'Às vezes! | Data e Hora: {data_hora}\n')
+        p1.write(f'{escolha} | Data e Hora: {data_hora}\n')
         p1.close()
     elif escolha ==3:
         p1 = open("Pergunta 1.txt", "a",  encoding='utf-8' )
-        p1.write(f'Não, nunca pensei sobre... | Data e Hora: {data_hora}\n')
+        p1.write(f'{escolha} | Data e Hora: {data_hora}\n')
         p1.close()
     elif escolha ==4:
         p1 = open("Pergunta 1.txt", "a",  encoding='utf-8' )
-        p1.write(f'Não, pretendo começar a fazer assim que souber mais a respeito! | Data e Hora: {data_hora}\n')
+        p1.write(f'{escolha} | Data e Hora: {data_hora}\n')
         p1.close()
 
 def TELA_PERGUNTA_2():
     try:
         clear()
-        print("Diz aí, tu tá gostando do jeito que o governo municipal ta lidando com as questoes ambientais da cidade do Recife?  ")
+        print("\033[1;32;40mDiz aí, tu tá gostando do jeito que o governo municipal ta lidando com as questoes ambientais da cidade do Recife?  \033[m")
         print("[1]Sim, muito!")
         print("[2]Acho que pode melhorar!")
         print("[3]Não estou gostando.")
 
         data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
 
-        escolha = int(input())
-        if escolha ==1:
+        escolha2 = int(input('Escolha: '))
+        if escolha2 ==1:
             p1 = open("Pergunta 2.txt", "a",  encoding='utf-8' )
-            p1.write(f'Sim, muito! | Data e Hora: {data_hora}\n')
+            p1.write(f'{escolha2}| Data e Hora: {data_hora}\n')
             p1.close()
-        elif escolha ==2:
+        elif escolha2 ==2:
             p1 = open("Pergunta 2.txt", "a",  encoding='utf-8' )
-            p1.write(f'Acho que pode melhorar! | Data e Hora: {data_hora}\n')
+            p1.write(f'{escolha2} | Data e Hora: {data_hora}\n')
             p1.close()
-        elif escolha ==3:
+        elif escolha2 ==3:
             p1 = open("Pergunta 2.txt", "a",  encoding='utf-8' )
-            p1.write(f'Não estou gostando. | Data e Hora: {data_hora}\n')
+            p1.write(f'{escolha2}| Data e Hora: {data_hora}\n')
             p1.close()
 
     except(ValueError):
-        print("Valor inserido incorreto, tente novamente...")
+        print("\033[1;31;40mValor inserido incorreto, tente novamente...\033[m")
         time.sleep(1)
         TELA_PERGUNTA_2()
 
+def TELA_PERGUNTA_3 ():
+    clear()
+    print('Você é de Recife? ')
+    print('[1]-Sim, sou daqui! ')
+    print('[2]-Não sou daqui! ')
 
-def TELA_COLABORADORES(): # ONGS/SITE
+    escolha_3:int(input('Escolha: '))
     clear()
     print()
 
@@ -174,7 +199,7 @@ def TELA_AGRADECIMENTO():
     clear()
     try:
         print("----[OBRIGADO!]----")
-        print("O que achou da experiência (0-5)")
+        print("\033[1;32;40mO que achou da experiência (0-5)\033[m")
         avalia = int(input())
 
         data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
