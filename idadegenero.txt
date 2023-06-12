@@ -1,6 +1,0 @@
-Idades e Gêneros Coletados:
-
-Idade:23 | Gênero:Feminino | Data e Hora: 2023-06-08 | 14:04:01
-Idade:23 | Gênero:Feminino | Data e Hora: 2023-06-08 | 14:04:47
-Feminino | Data e Hora: 2023-06-08 | 15:08:46
-Idade:20 | Gênero:2 | Data e Hora: 2023-06-08 | 15:08:46

@@ -1,0 +1,22 @@
+Diz aí, tu tá gostando do jeito que o governo municipal ta lidando com as questoes ambientais da cidade do Recife?
+
+LEGENDA: 
+1-Sim, muito!
+2-Acho que pode melhorar!
+3-Não estou gostando.
+--------------------------------------------------
+
+2 | Data e Hora: 2023-06-12 | 11:12:11
+1| Data e Hora: 2023-06-12 | 11:37:18
+1| Data e Hora: 2023-06-12 | 11:37:24
+1| Data e Hora: 2023-06-12 | 11:37:29
+1| Data e Hora: 2023-06-12 | 11:42:20
+2 | Data e Hora: 2023-06-12 | 12:00:33
+1| Data e Hora: 2023-06-12 | 12:01:29
+2 | Data e Hora: 2023-06-12 | 12:19:38
+1| Data e Hora: 2023-06-12 | 13:00:37
+1| Data e Hora: 2023-06-12 | 13:06:46
+1| Data e Hora: 2023-06-12 | 17:43:22
+2 | Data e Hora: 2023-06-12 | 18:03:52
+2 | Data e Hora: 2023-06-12 | 18:30:57
+2 | Data e Hora: 2023-06-12 | 18:36:28
