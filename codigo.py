@@ -68,8 +68,9 @@ def tela_inicial():
                 TELA_MAPA()
                 TELA_COLABORADORES()
                 TELA_AGRADECIMENTO()
-        except (ValueError,TypeError,EOFError):
-            print("Digite um valor inteiro")  #botar cor vermelha
+        except:
+            print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
+            time.sleep(1)
 
 
 def TELA_PERGUNTA_IDADE_GENERO():
@@ -206,7 +207,7 @@ def TELA_PERGUNTA_1():
             p1.close()
 
     except(ValueError,TypeError,EOFError):
-        print("\033[1;31;40mValor inserido incorreto, tente novamente...\033[m")
+        print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
         time.sleep(1)
         TELA_PERGUNTA_1()
             
@@ -249,7 +250,7 @@ def TELA_PERGUNTA_2():
             TELA_PERGUNTA_2()
 
     except(ValueError,TypeError,EOFError):
-        print("\033[1;31;40mValor inserido incorreto, tente novamente...\033[m")
+        print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
         time.sleep(1)
         TELA_PERGUNTA_2()
 
@@ -260,14 +261,25 @@ def TELA_VIDEO_3():
     caminho_video = r"C:\Users\LENOVO\Desktop\Projetos\MangueTotem\armazenamento\Maracatu.mp4"
     abrir_video(caminho_video)
     time.sleep(3)
-    print("[1]Continuar")
-    continuar = int(input())
-    if continuar ==1:
-        print()
-    else:
-        print("DIGITE UM VALOR VÁLIDO")
+    continuacao()
+
+def continuacao():
+    try:
+        print("[1]Continuar")
+        continuar = int(input())
+        if continuar ==1:
+            print()
+        else:
+            print("DIGITE O NUMERO SOLICITADO")
+            time.sleep(1)
+            TELA_VIDEO_3()
+    except(ValueError,TypeError,EOFError):
+        print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
         time.sleep(1)
-        TELA_VIDEO_3()
+        continuacao()
+           
+        
+            
 
 def TELA_REGIAO(): # AINDA FALTANDO ADICIONAR AO ARQUIVO
     '''Função que coleta informação sobre a região do usuário, de onde ele vem'''
@@ -373,52 +385,40 @@ def TELA_AGRADECIMENTO():
     except IOError:
         print("\n\033[1;31;40mErro ao abrir ou escrever no arquivo.\033[m")#ajustar mensagem e ERRO a ser identificado
     except(ValueError,TypeError,EOFError):
-        print("\033[1;31;40mValor inserido incorreto, tente novamente...\033[m")
+        print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
         time.sleep(1)
         TELA_AGRADECIMENTO()
 
 
 def TELA_COLABORADORES ():
     '''Função que vai exibir as informações dos colaboradores do projeto'''
-    try:
-        clear()
+    clear()
 
-        # imagem = Image.open("")
-        # imagem.show
+    # imagem = Image.open("")
+    # imagem.show
 
-        print('\n\033[4;37;40mSOBRE:\033[m')
+    print('\n\033[4;37;40mSOBRE:\033[m')
 
-        print('''O Instituto Antromangue promove a manutenção da indentidade social, cultural e ambiental da cidade do Recife, 
-        juntamente ao seu desejo de proporcionar uma maior interação entre o público jovem com o movimento Manugebeat.''')
+    print('''O Instituto Antromangue promove a manutenção da indentidade social, cultural e ambiental da cidade do Recife, 
+    juntamente ao seu desejo de proporcionar uma maior interação entre o público jovem com o movimento Manugebeat.''')
 
-        print()
+    print()
 
-        print('\n\033[4;37;40mDESEJA AJUDAR?\033[m')
+    print('\n\033[4;37;40mDESEJA AJUDAR?\033[m')
 
-        print('\n\033[4;37;40mCONTATO:\033[m')
+    print('\n\033[4;37;40mCONTATO:\033[m')
 
-        print('antromangue.producoes@gmail.com')
+    print('antromangue.producoes@gmail.com')
 
-        print()
+    print()
 
-        qr = qrcode.make('https://nubank.com.br/pagar/p47ub/BVj6iRe45k')
-        qr.save('qrcode.jpg')
+    qr = qrcode.make('https://nubank.com.br/pagar/p47ub/BVj6iRe45k')
+    qr.save('qrcode.jpg')
 
-        imagem2 = Image.open("qrcode.jpg")
-        imagem2.show()
+    imagem2 = Image.open("qrcode.jpg")
+    imagem2.show()
+    continuacao()
 
-        print("[1]Continuar")
-        decisao = int(input("Escolha: "))
-
-        if decisao==1:
-            loading()
-        else:
-            print("VALOR INCORRETO")
-            time.sleep(1)
-            TELA_COLABORADORES()
-    except(ValueError,TypeError,EOFError):
-        print("\033[1;31;40mValor inserido incorreto, tente novamente...\033[m")
-        time.sleep(1)
-        TELA_COLABORADORES()
+        
 
 tela_inicial()

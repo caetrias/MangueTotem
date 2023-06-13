@@ -8,3 +8,7 @@ Estrelas: 5 | Data e Hora: 2023-06-13 | 03:34:45
 Estrelas: 5 | Data e Hora: 2023-06-13 | 03:35:20
 Estrelas: 5 | Data e Hora: 2023-06-13 | 03:36:50
 Estrelas: 5 | Data e Hora: 2023-06-13 | 03:39:02
+Estrelas: 5 | Data e Hora: 2023-06-13 | 04:04:49
+Estrelas: 5 | Data e Hora: 2023-06-13 | 04:04:59
+Estrelas: 5 | Data e Hora: 2023-06-13 | 04:05:08
+Estrelas: 5 | Data e Hora: 2023-06-13 | 04:05:17
