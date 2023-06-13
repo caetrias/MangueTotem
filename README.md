@@ -95,6 +95,21 @@ ARQUIVOS:
     -
 
     Certifique-se de colocar os arquivos nos caminhos corretos conforme foram salvos no seu dispositivo, principalmente os arquivos de imagem/vídeo.
+    Você pode encontrá-los na sessão "armazenamento" desse repositório.
+
+
+PASSOS PARA USAR A APLICAÇÃO:
+
+    1) Faça o clone do repositório do GitHub para o seu repositório local
+    2) Abra o seu editor de código-fonte, selecionando o arquivo 'codigo.py'
+    1) Certifique-se de ter todas as bibliotecas mencionadas instaladas
+    4)Certifique-se de ter os vídeos e outros recursos necessários. Atualize os caminhos de acordo com a localização dos seus arquivos.
+    2) Execute o arquivo 'codigo.py'
+    3) Siga as instruções fornecidas na interface do terminal. A aplicação apresentará uma série de telas e opções interativas que você pode selecionar com base nas instruções.
+    
+    OBS.: é imprescindível ter todos os recursos necessários (vídeos, imagens, etc.) nos caminhos específicos do seu dispositivo para que a aplicação funcione de maneira correta.
+    
+
 
 
 
