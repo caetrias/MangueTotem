@@ -8,3 +8,7 @@ Região: Nordeste | Estado: Pernambuco
 Data e Hora: 2023-06-12 | 18:36:07
 Região: Norte | Estado: Acre
 Data e Hora: 2023-06-12 | 18:41:32
+Região: Nordeste | Estado: Pernambuco
+Data e Hora: 2023-06-12 | 21:41:43
+Região: Sul | Estado: Rio Grande do Sul
+Data e Hora: 2023-06-12 | 21:45:16

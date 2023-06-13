@@ -13,12 +13,4 @@ LEGENDA GÊNERO:
 [5] - Outro
 --------------------------------------------------
 
-Gênero: 1 | Data e Hora: 2023-06-12 | 17:42:29
-Gênero: 1 | Data e Hora: 2023-06-12 | 17:57:37
-Gênero: 1 | Data e Hora: 2023-06-12 | 18:01:14
-Gênero: 1 | Data e Hora: 2023-06-12 | 18:02:09
-Gênero: 1 | Data e Hora: 2023-06-12 | 18:03:09
-Gênero: 1 | Data e Hora: 2023-06-12 | 18:21:10
-Gênero: 2 | Data e Hora: 2023-06-12 | 18:30:37
-Gênero: 1 | Data e Hora: 2023-06-12 | 18:36:15
-Gênero: 2 | Data e Hora: 2023-06-12 | 18:42:15
+Gênero: 2 | Idade: 2 | Data e Hora: 2023-06-12 | 21:46:05

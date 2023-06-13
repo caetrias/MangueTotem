@@ -14,7 +14,8 @@ from PIL import Image
 import folium
 import webbrowser
 
-def abrir_video(caminho):    
+def abrir_video(caminho):  
+    '''Função que recebe o caminho para o arquivo do vídeo e executa comando para abrí-lo'''  
     url = "file:///" + caminho.replace("\\", "/")
     webbrowser.open(url)
     #caminho_video = r"CAMINHO\DO\VIDEO" -> CAMINHO PERSONALIZADO PARA CADA USUARIO
@@ -46,8 +47,7 @@ def tela_inicial():
     clear()
     VIDEO_INICIAL()
     TELA_REGIAO()
-    TELA_PERGUNTA_IDADE()
-    TELA_PERGUNTA_GENERO()
+    TELA_PERGUNTA_IDADE_GENERO()
     while True:
         try:
             clear()
@@ -71,8 +71,11 @@ def tela_inicial():
         except (ValueError,TypeError,EOFError):
             print("Digite um valor inteiro")  #botar cor vermelha
 
-def TELA_PERGUNTA_IDADE():
+
+def TELA_PERGUNTA_IDADE_GENERO():
+    '''Pergunta idade e gênero do usuário'''
     clear()
+    
     data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
     try:
         print("\033[1;32;40mQual a sua idade? \033[m")
@@ -88,16 +91,13 @@ def TELA_PERGUNTA_IDADE():
             clear()
             print("\n\033[1;31;40m---Digite um valor VÁLIDO---\033[m")
             time.sleep(1)
-            TELA_PERGUNTA_IDADE()
+            TELA_PERGUNTA_IDADE_GENERO()
     except(ValueError,TypeError,EOFError):
         print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
         time.sleep(1)
-        TELA_PERGUNTA_IDADE()
-            
-
-def TELA_PERGUNTA_GENERO():
-    clear()
-    data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
+        TELA_PERGUNTA_IDADE_GENERO()
+#-----------------------------------------------------------------------------------
+    #data_hora = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
     try:
         print("\n\033[1;32;40mQual seu Gênero?\033[m")
         print("\n[1] Homem Cis")
@@ -108,28 +108,28 @@ def TELA_PERGUNTA_GENERO():
         sexo = int(input("Escolha: "))
         if sexo == 1:
             f = open("armazenamento/idadegenero.txt", "a",  encoding='utf-8' )
-            f.write(f"Gênero: {sexo} | Data e Hora: {data_hora}\n")
+            f.write(f"Gênero: {sexo} | Idade: {idade} | Data e Hora: {data_hora}\n")
             f.close()
         elif sexo == 2:
             f = open("armazenamento/idadegenero.txt", "a",  encoding='utf-8' )
-            f.write(f"Gênero: {sexo} | Data e Hora: {data_hora}\n")
+            f.write(f"Gênero: {sexo} | Idade: {idade} | Data e Hora: {data_hora}\n")
             f.close()
         elif sexo == 3:
             f = open("armazenamento/idadegenero.txt", "a",  encoding='utf-8' )
-            f.write(f"Gênero: {sexo} | Data e Hora: {data_hora}\n")
+            f.write(f"Gênero: {sexo} | Idade: {idade} | Data e Hora: {data_hora}\n")
             f.close()
         elif sexo == 4:
             f = open("armazenamento/idadegenero.txt", "a",  encoding='utf-8' )
-            f.write(f"Gênero: {sexo} | Data e Hora: {data_hora}\n")
+            f.write(f"Gênero: {sexo} | Idade: {idade} | Data e Hora: {data_hora}\n")
             f.close()
         elif sexo == 5:
             f = open("armazenamento/idadegenero.txt", "a",  encoding='utf-8' )
-            f.write(f"Gênero: {sexo} | Data e Hora: {data_hora}\n")
+            f.write(f"Gênero: {sexo} | Idade: {idade} | Data e Hora: {data_hora}\n")
             f.close()
     except(ValueError,TypeError,EOFError):
         print("\n\033[1;31;40m---Digite um valor INTEIRO---\033[m")
         time.sleep(1)
-        TELA_PERGUNTA_GENERO()
+        TELA_PERGUNTA_IDADE_GENERO()
 
 
 
@@ -332,6 +332,7 @@ def TELA_REGIAO(): # AINDA FALTANDO ADICIONAR AO ARQUIVO
         TELA_REGIAO()
 
 def TELA_MAPA(): 
+    '''Apresenta o mapa no navegador'''
     clear()
     mapa = folium.Map(location=[-8.063117141345597, -34.870979364607095])
 
@@ -343,9 +344,9 @@ def TELA_MAPA():
 
     webbrowser.open('file://' + os.path.abspath('mapaF.html'))
 
-    print('Aí está o mapa com a localização dos totens MUD.E')
+    print('Aí está o mapa com a localização dos totens MUD.E!')
     
-    time.sleep(3)
+    time.sleep(5)
 
 
 def TELA_AGRADECIMENTO():
