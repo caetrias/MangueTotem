@@ -12,3 +12,11 @@ Região: Nordeste | Estado: Pernambuco
 Data e Hora: 2023-06-12 | 21:41:43
 Região: Sul | Estado: Rio Grande do Sul
 Data e Hora: 2023-06-12 | 21:45:16
+Região: Nordeste | Estado: Pernambuco
+Data e Hora: 2023-06-13 | 02:40:51
+Região: Nordeste | Estado: Pernambuco
+Data e Hora: 2023-06-13 | 02:42:28
+Região: Nordeste | Estado: Pernambuco
+Data e Hora: 2023-06-13 | 03:22:10
+Região: Nordeste | Estado: Pernambuco
+Data e Hora: 2023-06-13 | 03:38:41

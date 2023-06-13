@@ -14,3 +14,7 @@ LEGENDA GÊNERO:
 --------------------------------------------------
 
 Gênero: 2 | Idade: 2 | Data e Hora: 2023-06-12 | 21:46:05
+Gênero: 1 | Idade: 3 | Data e Hora: 2023-06-13 | 02:40:54
+Gênero: 1 | Idade: 3 | Data e Hora: 2023-06-13 | 02:42:30
+Gênero: 1 | Idade: 3 | Data e Hora: 2023-06-13 | 03:22:12
+Gênero: 1 | Idade: 3 | Data e Hora: 2023-06-13 | 03:38:43
