@@ -33,4 +33,22 @@ assim como a adesão por parte da população da cidade do Recife à esses temas
 meios de contato e um QR Code caso o usuário queira contribuir financeiramente com a causa. Por meio desse projeto, acreditamos estar promovendo a preservação ambiental através de tecnologia 
 e das ideias do movimento manguebeat.
 
+INSTRUÇÕES DE INSTALAÇÃO:
+
+    Versão da Linguagem: Python 3.11.2
+    Configuração de Ambiente:
+      Certifique-se de ter essas bibliotecas extras instaladas:
+        -> Pygame
+        -> Python-vlc
+        -> pillow
+        -> folium
+        -> qrcode
+      Pode-se instalar as bibliotecas usando os seguintes no Git Bash
+        -> pip install pygame
+        -> pip install python-vlc
+        -> pip install pillow
+        -> pip install folium
+        -> pip install qrcode
+
+
 
