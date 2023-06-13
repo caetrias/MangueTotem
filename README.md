@@ -49,6 +49,50 @@ INSTRUÇÕES DE INSTALAÇÃO:
         -> pip install pillow
         -> pip install folium
         -> pip install qrcode
+      Garantir que, ao executar o código e baixar os arquivos necessários, procurar o caminho desse arquivo (vídeo, imagem) no seu dispositivo e substituir no código, tendo em vista que o caminho do arquivo muda de um dispositvo para o
+      outro, junto com o método de instalação
+     
+INSTRUÇÕES DE USO:
+
+    Exemplos de entrada de dados:
+      -> IDADE: [1] Menor que 13 anos
+                [2] 13 - 16 anos
+                [3] 17 - 20 anos
+                [4] 21 - 25 anos 
+                [5] Maior que 26 anos
+                Escolha: 5
+     -> GÊNERO: Qual seu Gênero?
+                [1] Homem Cis
+                [2] Homem Trans
+                [3] Mulher Cis
+                [4] Mulher Trans
+                [5] Outro
+                Escolha: 1
+     -> RECICLAGEM: QUAL PRÁTICA DE RECICLAGEM VOCÊ CONSIDERA MAIS PRESENTE NO SEU DIA A DIA ? 
+                    [1] SEPARAR RESÍDUOS
+                    [2] REDUZIR O USO DE MATERIAIS DESCARTÁVEIS
+                    [3] COMPRAR PRODUTOS RECICLÁVEIS
+                    [4] COMPOSTAGEM
+                    Escolha: 3
+     -> OPINIÃO SOBRE ATUAÇÃO DO GOVERNO: Diz aí, tu tá gostando do jeito que o governo municipal ta lidando com as questoes ambientais da cidade do Recife?  
+                                          [1]Sim, muito!
+                                          [2]Acho que pode melhorar!
+                                          [3]Não estou gostando.
+                                          Escolha: 2
+
+
+ARQUIVOS:
+
+    Antes de executar o código, certifique-se de ter os seguintes arquivos:
+
+    - CRAB.mp4: Vídeo inicial do totem.
+    - Maracatu.mp4: Vídeo informativo.
+    - idadegenero.txt: Arquivo para armazenar dados de idade e gênero do usuário.
+    - Pergunta 1.txt: Arquivo para armazenar respostas da pergunta 1.
+    - Pergunta 2.txt: Arquivo para armazenar respostas da pergunta 2.
+    - regioes.txt: Arquivo para armazenar informações sobre a região do usuário.
+
+    Certifique-se de colocar os arquivos nos caminhos corretos conforme foram salvos no seu dispositivo.
 
 
 
