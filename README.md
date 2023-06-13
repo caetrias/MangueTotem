@@ -19,7 +19,7 @@ AUTORES:
 
     Julia Silva Brito
 
-    Letícia Brito
+    Letícia Souto Maior de Brito
 
     Lucas Teixeira Catão Ribeiro
 
