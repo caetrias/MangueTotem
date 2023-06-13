@@ -49,8 +49,8 @@ INSTRUÇÕES DE INSTALAÇÃO:
         -> pip install pillow
         -> pip install folium
         -> pip install qrcode
-      Garantir que, ao executar o código e baixar os arquivos necessários, procurar o caminho desse arquivo (vídeo, imagem) no seu dispositivo e substituir no código, tendo em vista que o caminho do arquivo muda de um dispositvo para o
-      outro, junto com o método de instalação
+      Garantir que, ao executar o código e baixar os arquivos necessários, procurar o caminho desse arquivo (vídeo, imagem) no seu dispositivo 
+      e substituir no código, tendo em vista que o caminho do arquivo muda de um dispositvo para o outro, junto com o método de instalação
      
 INSTRUÇÕES DE USO:
 
