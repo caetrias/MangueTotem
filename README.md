@@ -91,8 +91,10 @@ ARQUIVOS:
     - Pergunta 1.txt: Arquivo para armazenar respostas da pergunta 1.
     - Pergunta 2.txt: Arquivo para armazenar respostas da pergunta 2.
     - regioes.txt: Arquivo para armazenar informações sobre a região do usuário.
+    - avaliações.txt: Arquivo para armazenar as avaliações dos usuários sobre a experiência no "mud.e"
+    -
 
-    Certifique-se de colocar os arquivos nos caminhos corretos conforme foram salvos no seu dispositivo.
+    Certifique-se de colocar os arquivos nos caminhos corretos conforme foram salvos no seu dispositivo, principalmente os arquivos de imagem/vídeo.
 
 
 
